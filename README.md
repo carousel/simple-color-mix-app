@@ -1,1 +1,1 @@
-A simple app for mixing colors with sliders.
+A simple app for mixing colors on a page, with HTML sliders.

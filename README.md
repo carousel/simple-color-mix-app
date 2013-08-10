@@ -1,2 +1,2 @@
 <h3>About</h3>
-A simple app for mixing colors on a page, with HTML sliders.
+Application for mixing colors on a page with HTML sliders and user input field.

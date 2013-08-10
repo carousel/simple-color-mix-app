@@ -2,24 +2,82 @@
 <html charset="utf-8">
 
     <head>
-        <title>Index</title>
-
+        <title>Simple Color Mix App</title>
+        <!--miroslav.trninic@gmail.com-->
         <link rel="stylesheet" href="" type="text/css"/>
             <style type="text/css">
+                html{
+                    width:960px;
+                }
                 body{
+                    width:960px;
+                    background-color:#808080;
+                    height:600px;
                     margin-top:30px;
+                }
+                span{
+                    position:relative;
+                    top:-50px;
+                }
+                .red{
+                    font-size:25px;
+                    font-weight:bold;
+                    color:#ff0000;
+                    margin-left:40px;
+                }
+                .green{
+                    font-size:25px;
+                    font-weight:bold;
+                    color:#00ff00;
+                    margin-left:20px;
+                }
+                .blue{
+                    font-size:25px;
+                    font-weight:bold;
+                    color:#489dff;
+                    margin-left:20px;
+                }
+                input[type="range"]{
+                    -webkit-appearance:
+                        slider-vertical;
+                }
+                input#hex{
+                    background-color:#191b1d;
+                    width:140px;
+                    font-size:30px;
+                    border-radius:25px;
+                    border-width:0px;
+                    color:#fff;
+                    padding-left:15px;
+                    padding-right:15px;
+                    float:right;
+                    left:-10px;
+                    position:relative;
+                    top:-90px;
+                }
+                div.sliders{
+                    margin-left:70px;
+                    border-radius:100px;
+                    background-color:black;     
+                    padding:20px;
+                }
+                p{
+                    margin-top:40px;
+                    width:900px;
+                    margin-left:90px;
+                    font-size:1.3em;
                 }
             </style>
     </head>
 
     <body>
         <div class="sliders">
-            Red: <input id="r" max="255" min="0" type="range" value="128">
-            Green:<input id="g" max="255" min="0" type="range" value="128">
-            Blue: <input id="b" max="255" min="0" type="range" value="128">
-            <input id="hex" type="text" value="Hex value">
+                <span class="red">Red:</span><input id="r" max="255" min="0" type="range" value="128">
+                <span class="green">Green:</span><input id="g" max="255" min="0" type="range" value="128">
+                <span class="blue">Blue:</span><input id="b" max="255" min="0" type="range" value="128">
+            <input id="hex" type="text" placeholder="Hex value">
         </div>
-            <h2>Move sliders, and combine a colors. You can see a result, converted in HEX in the input fiel.</h2>
+            <p>Move sliders and combine colors, or enter HEX value in the input field</p>
     <script src="js/color-mix.js"></script>
     </body>
 
